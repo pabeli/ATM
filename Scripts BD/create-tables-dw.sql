@@ -38,7 +38,7 @@ CREATE TABLE DTATMInfo(
 	atm_lat real NOT NULL,
 	atm_lon real NOT NULL,
 	atm_street_number int NOT NULL,
-	atm_location varchar(40) NOT NULL,
+	atm_location varchar(50) NOT NULL,
 	atm_zipcode int NOT NULL,
 
     CONSTRAINT PK_DTATMInfo PRIMARY KEY (atm_id)
