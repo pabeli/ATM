@@ -35,8 +35,8 @@ CREATE TABLE DTWeather(
 
 CREATE TABLE DTATMInfo(
 	atm_id int NOT NULL,
-	atm_lat float NOT NULL,
-	atm_lon float NOT NULL,
+	atm_lat real NOT NULL,
+	atm_lon real NOT NULL,
 	atm_street_number int NOT NULL,
 	atm_location varchar(40) NOT NULL,
 	atm_zipcode int NOT NULL,

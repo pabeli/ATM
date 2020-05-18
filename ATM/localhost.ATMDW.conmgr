@@ -3,6 +3,8 @@
   DTS:ObjectName="localhost.ATMDW"
   DTS:DTSID="{B575549F-9B15-4073-9977-12D27AB81693}"
   DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::DW]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="Data Source=localhost;Initial Catalog=ATMDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />

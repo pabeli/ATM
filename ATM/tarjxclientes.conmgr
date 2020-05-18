@@ -4,6 +4,8 @@
   DTS:DTSID="{BD35CCF8-BCAB-4C89-BBF2-8EBA718642F8}"
   DTS:Description="Datos de tarjetas de clientes"
   DTS:CreationName="FLATFILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::tarjxclienteCSV]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:Format="Delimited"
