@@ -26,12 +26,13 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-N5DN7RS</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1wZuKzFqB0iWrJuID5jseQAAAAACAAAAAAAQZgAAAAEAACAAAACYFmJ5L2CrZHfa7J7eVcHhJccNx3m4QKa3lLaxVIk5ggAAAAAOgAAAAAIAACAAAAAKuyAEQuhJU979ThANinaGgsMjyY8+bV1MGbxnZVvbZJAAAABkSs1KAHc7RGOjuAzbru7DVt4HTRDYAGRKPehnTzo10AO9jNf7/y4iB5a/ONBvve9iB/f9y5+pos2/Arfd81+ON2A+s7eIy94u7gO4uuWIrPMJppNB3jbyMQ7ZdunUuymuiGB8zHi0YXMDDQ5FQBKMclqlvtSU83B82QAgUVHfbDa7nczEzVYSkFSz5Es79gZAAAAAnPyISOVdWcjKOC9Bp84S1AkUJjZFdo4KQNewoq6L79EoujznDpImVD2IN/Fw0eq1hzVCMUdFFB1L32v/ZZvv4Q==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1wZuKzFqB0iWrJuID5jseQAAAAACAAAAAAAQZgAAAAEAACAAAADXCEz9j1WsDOaN6Kl21UdLV4pxZPtZff/wEM95GmDYGAAAAAAOgAAAAAIAACAAAADw4g0h7ydrUkAanQf4ZXvtnX2EFjkcPkVWuv0tOm4cJpAAAABxKv4cyVwTnFKP+nxwsPPJh0n8ETNM6L+x9ezxZSzG/JZu5d+5vkwV/fYx0WyS1jeEQklU2Bq+WVl/Mla64VtMgfbcM7i22aShs4eM7QnOVSp3eB51IJm6POZbfEHltMezmnAvhaoa6NN7SSudC+gHexN2SMLna8PPqLEw76oxKyV/+A9VYiIlGXWxB0myIWRAAAAAVEpuiConEXZQCChcFfkSsYVrOcioxQuSvv6KSPVWV3cPKwfRgUlvm7EiK75n7wm9119H5lH+qrWRbD41op77Rg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Paquete DTCards.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Paquete DTATMInfo.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Paquete DTWeather.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Paquete DTATMInfo 2.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="tarjxclientes.conmgr" />
@@ -98,21 +99,6 @@
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.tarjxclientes.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\Paula\Documents\BI ETL 13 05\Laboratorio\danish-atm-transactions\tarjxclientes.csv</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
             <SSIS:Parameter SSIS:Name="CM.tarjxclientes.DataRowsToSkip">
@@ -250,21 +236,6 @@
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.localhost.ATMDW.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=localhost;Initial Catalog=ATMDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
             <SSIS:Parameter SSIS:Name="CM.localhost.ATMDW.ConnectUsingManagedIdentity">
@@ -415,21 +386,6 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.atmdata.ConnectionString">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="CreationName">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\Paula\Documents\BI ETL 13 05\Laboratorio\danish-atm-transactions\atm_data.csv</SSIS:Property>
-                <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-              </SSIS:Properties>
-            </SSIS:Parameter>
             <SSIS:Parameter SSIS:Name="CM.atmdata.DataRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
@@ -517,6 +473,8 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">
+                </SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -569,16 +527,33 @@
               </SSIS:Properties>
               <SSIS:Parameters />
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Paquete DTATMInfo.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Paquete DTWeather.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{7F141DDD-BF82-4FBA-99B1-D21ABABFCD60}</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{D51D2B36-E4E9-4F80-8957-78539589D24F}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">Package2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{0A9708A4-E5A6-47A8-88DE-80403C8F38C3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{86BF5C88-9160-429B-A326-B9914E240F9D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Paquete DTATMInfo 2.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{BA91AAD4-DE46-4D3A-B41C-C2DDF3A36275}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Paquete DTATMInfo 2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">19</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E21F74DB-D88E-4DA8-A094-3EE70A275502}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

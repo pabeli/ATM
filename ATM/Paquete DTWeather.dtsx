@@ -1,0 +1,800 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/19/2020 11:10:50 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-N5DN7RS"
+  DTS:CreatorName="DESKTOP-N5DN7RS\Paula"
+  DTS:DTSID="{D51D2B36-E4E9-4F80-8957-78539589D24F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.94"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{86BF5C88-9160-429B-A326-B9914E240F9D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Weather"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{28A847FA-3B21-4C08-8FF3-2977958CCC65}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Weather"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Weather\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Weather\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Weather\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Weather\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Weather\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Weather\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Weather\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Weather\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Weather\Flat File Weather"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Weather"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Weather\Flat File Weather.Connections[FlatFileConnection]"
+                  connectionManagerID="{4D41E8C8-C894-4045-9B81-7F208129B47B}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[atmdata]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_id]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_id]"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_id]"
+                      name="weather_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_main]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_main]"
+                      length="200"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_main]"
+                      name="weather_main"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_description]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_description]"
+                      length="300"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_description]"
+                      name="weather_description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[year]"
+                      dataType="i2"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="7"
+                      name="month" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[day]"
+                      dataType="i1"
+                      name="day" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weekday]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="weekday" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[hour]"
+                      dataType="i1"
+                      name="hour" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_status]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="atm_status" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_id]"
+                      dataType="i1"
+                      name="atm_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_manufacturer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="atm_manufacturer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_location]"
+                      dataType="wstr"
+                      length="50"
+                      name="atm_location" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_streetname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="21"
+                      name="atm_streetname" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_street_number]"
+                      dataType="i2"
+                      name="atm_street_number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_zipcode]"
+                      dataType="i2"
+                      name="atm_zipcode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_lat]"
+                      dataType="r4"
+                      name="atm_lat" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[atm_lon]"
+                      dataType="r4"
+                      name="atm_lon" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[cardnum]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cardnum" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[currency]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="currency" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[amount]"
+                      dataType="r4"
+                      name="amount" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[service]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="service" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[message_code]"
+                      dataType="i1"
+                      name="message_code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[message_text]"
+                      codePage="1252"
+                      dataType="str"
+                      length="66"
+                      name="message_text" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_lat]"
+                      dataType="r4"
+                      name="weather_lat" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_lon]"
+                      dataType="r4"
+                      name="weather_lon" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_city_id]"
+                      dataType="i4"
+                      name="weather_city_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_city_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="17"
+                      name="weather_city_name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[temp]"
+                      dataType="r4"
+                      name="temp" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[pressure]"
+                      dataType="i2"
+                      name="pressure" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[humidity]"
+                      dataType="i1"
+                      name="humidity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[wind_speed]"
+                      dataType="i1"
+                      name="wind_speed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[wind_deg]"
+                      dataType="i1"
+                      name="wind_deg" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[rain_3h]"
+                      dataType="r4"
+                      name="rain_3h" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[clouds_all]"
+                      dataType="i1"
+                      name="clouds_all" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_id]"
+                      dataType="i2"
+                      name="weather_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_main]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="weather_main" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="300"
+                      name="weather_description" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Weather\OLE DB DTWeather"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB DTWeather"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[DTWeather]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Weather\OLE DB DTWeather.Connections[OleDbConnection]"
+                  connectionManagerID="{B575549F-9B15-4073-9977-12D27AB81693}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.ATMDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].Columns[weather_id]"
+                      cachedDataType="i2"
+                      cachedName="weather_id"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].ExternalColumns[weather_id]"
+                      lineageId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].Columns[weather_main]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="weather_main"
+                      externalMetadataColumnId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].ExternalColumns[weather_main]"
+                      lineageId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_main]" />
+                    <inputColumn
+                      refId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].Columns[weather_description]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="300"
+                      cachedName="weather_description"
+                      externalMetadataColumnId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].ExternalColumns[weather_description]"
+                      lineageId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_description]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].ExternalColumns[weather_id]"
+                      dataType="i4"
+                      name="weather_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].ExternalColumns[weather_main]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      name="weather_main" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input].ExternalColumns[weather_description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="300"
+                      name="weather_description" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Weather\OLE DB DTWeather.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\OLE DB DTWeather.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Weather\OLE DB DTWeather.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Weather\OLE DB DTWeather.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Weather\OLE DB DTWeather.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Weather\Sort by weather_id"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort by weather_id"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Weather\Sort by weather_id.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Weather\Sort by weather_id.Inputs[Sort Input].Columns[weather_id]"
+                      cachedDataType="i2"
+                      cachedName="weather_id"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Weather\Sort by weather_id.Inputs[Sort Input].Columns[weather_main]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="weather_main"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_main]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Weather\Sort by weather_id.Inputs[Sort Input].Columns[weather_description]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="300"
+                      cachedName="weather_description"
+                      lineageId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_description]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_id]"
+                      dataType="i2"
+                      lineageId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_id]"
+                      name="weather_id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_main]"
+                      codePage="1252"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_main]"
+                      name="weather_main">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_main]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_description]"
+                      codePage="1252"
+                      dataType="str"
+                      length="300"
+                      lineageId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output].Columns[weather_description]"
+                      name="weather_description">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output].Columns[weather_description]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Weather.Paths[Derived Column Output]"
+              endId="Package\Data Flow Weather\OLE DB DTWeather.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Weather\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Weather.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Weather\Sort by weather_id.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Weather\Flat File Weather.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Flow Weather.Paths[Sort Output]"
+              endId="Package\Data Flow Weather\Derived Column.Inputs[Derived Column Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Weather\Sort by weather_id.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Data Flow Weather"
+          TopLeft="15.3333327240414,11.7866667603387" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Weather">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157.6,41.6"
+          Id="Package\Data Flow Weather\Flat File Weather"
+          TopLeft="80.7666635407343,15.2533334545559" />
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Data Flow Weather\Sort by weather_id"
+          TopLeft="77.1666635407343,81.8133339835273" />
+        <EdgeLayout
+          Id="Package\Data Flow Weather.Paths[Flat File Source Output]"
+          TopLeft="159.566663540734,56.853333454556">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.9600005289714"
+              Start="0,0"
+              End="0,17.4600005289714">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.4600005289714" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Data Flow Weather\Derived Column"
+          TopLeft="83.1666635407343,155.306667900933" />
+        <EdgeLayout
+          Id="Package\Data Flow Weather.Paths[Sort Output]"
+          TopLeft="159.566663540734,123.413333983527">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.8933339174058"
+              Start="0,0"
+              End="0,24.3933339174058">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.3933339174058" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,4.19666695870291,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="172,41.6"
+          Id="Package\Data Flow Weather\OLE DB DTWeather"
+          TopLeft="71.5666636202072,223.253335107591" />
+        <EdgeLayout
+          Id="Package\Data Flow Weather.Paths[Derived Column Output]"
+          TopLeft="158.566663580471,196.906667900933">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.3466672066583"
+              Start="0,0"
+              End="0,18.8466672066583">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.8466672066583" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Weather\OLE DB DTWeather">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
