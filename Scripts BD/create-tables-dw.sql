@@ -18,17 +18,8 @@ CREATE TABLE DTDate(
 
 CREATE TABLE DTWeather(
 	weather_id int NOT NULL,
-	weather_city_id int NOT NULL,
-	weather_city_name varchar(50) NOT NULL,
-	temp float NOT NULL,
-	pressure int NOT NULL,
-	humidity int NOT NULL,
-	wind_speed int NOT NULL,
-	wind_deg int NOT NULL,
-	rain_3h float NOT NULL,
-	clouds_all int NOT NULL,
-	weather_main varchar(50) NOT NULL, 
-	weather_description varchar(50) NOT NULL,
+	weather_main varchar(120) NOT NULL, 
+	weather_description varchar(240) NOT NULL,
    
    CONSTRAINT PK_DTWeather PRIMARY KEY (weather_id)
 );
