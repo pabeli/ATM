@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete DTATMInfo Paula"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{F9331A18-8D37-4F7D-8835-A2C9709CF411}">
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{68DAF2CD-F15F-49DC-A866-EA42CC7B0612}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -113,7 +113,7 @@
                   <outputColumns>
                     <outputColumn
                       refId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].Columns[atm_lat]"
-                      dataType="r4"
+                      dataType="r8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[atm_lat]"
@@ -214,10 +214,11 @@
                     <outputColumn
                       refId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].Columns[atm_location]"
                       codePage="1252"
-                      dataType="text"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[atm_location]"
+                      length="50"
                       lineageId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].Columns[atm_location]"
                       name="atm_location"
                       truncationRowDisposition="FailComponent">
@@ -282,7 +283,8 @@
                     <externalMetadataColumn
                       refId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[atm_location]"
                       codePage="1252"
-                      dataType="text"
+                      dataType="str"
+                      length="50"
                       name="atm_location" />
                     <externalMetadataColumn
                       refId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[atm_streetname]"
@@ -300,7 +302,7 @@
                       name="atm_zipcode" />
                     <externalMetadataColumn
                       refId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[atm_lat]"
-                      dataType="r4"
+                      dataType="r8"
                       name="atm_lat" />
                     <externalMetadataColumn
                       refId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[atm_lon]"
@@ -392,13 +394,13 @@
                       refId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[weather_main]"
                       codePage="1252"
                       dataType="str"
-                      length="6"
+                      length="200"
                       name="weather_main" />
                     <externalMetadataColumn
                       refId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[weather_description]"
                       codePage="1252"
                       dataType="str"
-                      length="15"
+                      length="300"
                       name="weather_description" />
                   </externalMetadataColumns>
                 </output>
@@ -512,7 +514,7 @@
                       lineageId="Package\Data Flow DTATMInfo\Sort by atm_id.Outputs[Sort Output].Columns[atm_id]" />
                     <inputColumn
                       refId="Package\Data Flow DTATMInfo\OLE DB.Inputs[OLE DB Destination Input].Columns[atm_lat]"
-                      cachedDataType="r4"
+                      cachedDataType="r8"
                       cachedName="atm_lat"
                       externalMetadataColumnId="Package\Data Flow DTATMInfo\OLE DB.Inputs[OLE DB Destination Input].ExternalColumns[atm_lat]"
                       lineageId="Package\Data Flow DTATMInfo\Sort by atm_id.Outputs[Sort Output].Columns[atm_lat]" />
@@ -531,7 +533,8 @@
                     <inputColumn
                       refId="Package\Data Flow DTATMInfo\OLE DB.Inputs[OLE DB Destination Input].Columns[atm_location]"
                       cachedCodepage="1252"
-                      cachedDataType="text"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="atm_location"
                       externalMetadataColumnId="Package\Data Flow DTATMInfo\OLE DB.Inputs[OLE DB Destination Input].ExternalColumns[atm_location]"
                       lineageId="Package\Data Flow DTATMInfo\Sort by atm_id.Outputs[Sort Output].Columns[atm_location]" />
@@ -639,7 +642,7 @@
                     </inputColumn>
                     <inputColumn
                       refId="Package\Data Flow DTATMInfo\Sort by atm_id.Inputs[Sort Input].Columns[atm_lat]"
-                      cachedDataType="r4"
+                      cachedDataType="r8"
                       cachedName="atm_lat"
                       lineageId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].Columns[atm_lat]">
                       <properties>
@@ -688,7 +691,8 @@
                     <inputColumn
                       refId="Package\Data Flow DTATMInfo\Sort by atm_id.Inputs[Sort Input].Columns[atm_location]"
                       cachedCodepage="1252"
-                      cachedDataType="text"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="atm_location"
                       lineageId="Package\Data Flow DTATMInfo\Flat File ATM Info.Outputs[Flat File Source Output].Columns[atm_location]">
                       <properties>
@@ -744,7 +748,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow DTATMInfo\Sort by atm_id.Outputs[Sort Output].Columns[atm_lat]"
-                      dataType="r4"
+                      dataType="r8"
                       lineageId="Package\Data Flow DTATMInfo\Sort by atm_id.Outputs[Sort Output].Columns[atm_lat]"
                       name="atm_lat">
                       <properties>
@@ -784,7 +788,8 @@
                     <outputColumn
                       refId="Package\Data Flow DTATMInfo\Sort by atm_id.Outputs[Sort Output].Columns[atm_location]"
                       codePage="1252"
-                      dataType="text"
+                      dataType="str"
+                      length="50"
                       lineageId="Package\Data Flow DTATMInfo\Sort by atm_id.Outputs[Sort Output].Columns[atm_location]"
                       name="atm_location">
                       <properties>
@@ -848,7 +853,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="180.8,41.6"
+          Size="181,42"
           Id="Package\Data Flow DTATMInfo"
           TopLeft="32.66666536861,25.6533335372077" />
       </GraphLayout>
@@ -860,17 +865,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="226.4,41.6"
+          Size="146,42"
+          Id="Package\Data Flow DTATMInfo\Sort by atm_id"
+          TopLeft="170.033328035143,88.3799998512267" />
+        <NodeLayout
+          Size="226,42"
           Id="Package\Data Flow DTATMInfo\Derived Column with no repeats"
           TopLeft="148.433327796724,166.406666330549" />
         <NodeLayout
-          Size="160,41.6"
+          Size="160,42"
           Id="Package\Data Flow DTATMInfo\Flat File ATM Info"
           TopLeft="138.833328035143,23.5266668099297" />
         <NodeLayout
-          Size="145.6,41.6"
-          Id="Package\Data Flow DTATMInfo\Sort by atm_id"
-          TopLeft="170.033328035143,88.3799998512267" />
+          Size="117,42"
+          Id="Package\Data Flow DTATMInfo\OLE DB"
+          TopLeft="171.333326525159,249.600001983643" />
         <EdgeLayout
           Id="Package\Data Flow DTATMInfo.Paths[Sort Output]"
           TopLeft="242.833328035143,129.979999851227">
@@ -902,9 +911,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="1.39999988079052,23.2133332396612,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -938,13 +945,11 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="4,16.6266665206485,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="116.8,41.6"
-          Id="Package\Data Flow DTATMInfo\OLE DB"
-          TopLeft="171.333326525159,249.600001983643" />
         <EdgeLayout
           Id="Package\Data Flow DTATMInfo.Paths[Derived Column Output]"
           TopLeft="261.633327796724,208.006666330549">
