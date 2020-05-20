@@ -9,7 +9,7 @@ CREATE TABLE DTCards(
 CREATE TABLE DTDate(
 	date_id int NOT NULL,
 	date_year int NOT NULL,
-	date_month varchar(20) NOT NULL,
+	date_month int NOT NULL,
 	date_day int NOT NULL,
 	date_hour int NOT NULL,
 	date_weekday int NOT NULL,
