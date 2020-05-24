@@ -11,20 +11,20 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete DTDate"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{18199DD4-9AB5-4A1A-912A-D2C65B4A3D3D}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{6570F35E-F978-485E-B163-3B095C3B1358}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Data Flow DTDate"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{6E70A0AE-9E5F-4E9A-B6FE-66BCB1ADCB50}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Data Flow DTDate"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -32,7 +32,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Componente de script"
+              refId="Package\Data Flow DTDate\Componente de script"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;12"
               description="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma."
@@ -1286,87 +1286,87 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </properties>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Componente de script.Inputs[Entrada 0]"
+                  refId="Package\Data Flow DTDate\Componente de script.Inputs[Entrada 0]"
                   hasSideEffects="true"
                   name="Entrada 0">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Componente de script.Inputs[Entrada 0].Columns[year]"
+                      refId="Package\Data Flow DTDate\Componente de script.Inputs[Entrada 0].Columns[year]"
                       cachedDataType="i2"
                       cachedName="year"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[year]" />
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[year]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Componente de script.Inputs[Entrada 0].Columns[month]"
+                      refId="Package\Data Flow DTDate\Componente de script.Inputs[Entrada 0].Columns[month]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="month"
                       cachedSortKeyPosition="2"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[month]" />
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[month]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Componente de script.Inputs[Entrada 0].Columns[day]"
+                      refId="Package\Data Flow DTDate\Componente de script.Inputs[Entrada 0].Columns[day]"
                       cachedDataType="i1"
                       cachedName="day"
                       cachedSortKeyPosition="3"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[day]" />
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[day]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Componente de script.Inputs[Entrada 0].Columns[weekday]"
+                      refId="Package\Data Flow DTDate\Componente de script.Inputs[Entrada 0].Columns[weekday]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="weekday"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[weekday]" />
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[weekday]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\Componente de script.Inputs[Entrada 0].Columns[hour]"
+                      refId="Package\Data Flow DTDate\Componente de script.Inputs[Entrada 0].Columns[hour]"
                       cachedDataType="i1"
                       cachedName="hour"
                       cachedSortKeyPosition="4"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[hour]" />
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[hour]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Componente de script.Outputs[Salida 0]"
+                  refId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0]"
                   name="Salida 0"
-                  synchronousInputId="Package\Data Flow Task\Componente de script.Inputs[Entrada 0]">
+                  synchronousInputId="Package\Data Flow DTDate\Componente de script.Inputs[Entrada 0]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[weekday_n]"
+                      refId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[weekday_n]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[weekday_n]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[weekday_n]"
                       name="weekday_n" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[date_id]"
+                      refId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[date_id]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[date_id]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[date_id]"
                       name="date_id" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[full_date]"
+                      refId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[full_date]"
                       dataType="dbDate"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[full_date]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[full_date]"
                       name="full_date" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[day_of_year]"
+                      refId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[day_of_year]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[day_of_year]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[day_of_year]"
                       name="day_of_year" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[number_of_week]"
+                      refId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[number_of_week]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[number_of_week]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[number_of_week]"
                       name="number_of_week" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[quarter]"
+                      refId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[quarter]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[quarter]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[quarter]"
                       name="quarter" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[month_n]"
+                      refId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[month_n]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[month_n]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[month_n]"
                       name="month_n" />
                   </outputColumns>
                   <externalMetadataColumns />
@@ -1374,7 +1374,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Data Flow DTDate\Flat File Source"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -1394,23 +1394,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Data Flow DTDate\Flat File Source.Connections[FlatFileConnection]"
                   connectionManagerID="{4D41E8C8-C894-4045-9B81-7F208129B47B}:external"
                   connectionManagerRefId="Project.ConnectionManagers[atmdata]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[year]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[year]"
                       dataType="i2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[year]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[year]"
+                      externalMetadataColumnId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[year]"
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[year]"
                       name="year"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1425,14 +1425,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[month]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[month]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[month]"
+                      externalMetadataColumnId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[month]"
                       length="15"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[month]"
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[month]"
                       name="month"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1447,12 +1447,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[day]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[day]"
                       dataType="i1"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[day]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[day]"
+                      externalMetadataColumnId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[day]"
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[day]"
                       name="day"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1467,14 +1467,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[weekday]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[weekday]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weekday]"
+                      externalMetadataColumnId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weekday]"
                       length="15"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[weekday]"
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[weekday]"
                       name="weekday"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1489,12 +1489,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[hour]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[hour]"
                       dataType="i1"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hour]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[hour]"
+                      externalMetadataColumnId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hour]"
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[hour]"
                       name="hour"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -1512,167 +1512,167 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
                       dataType="i4"
                       name="id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[year]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[year]"
                       dataType="i2"
                       name="year" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[month]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[month]"
                       codePage="1252"
                       dataType="str"
                       length="15"
                       name="month" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[day]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[day]"
                       dataType="i1"
                       name="day" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weekday]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weekday]"
                       codePage="1252"
                       dataType="str"
                       length="15"
                       name="weekday" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hour]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hour]"
                       dataType="i1"
                       name="hour" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_status]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_status]"
                       codePage="1252"
                       dataType="str"
                       length="8"
                       name="atm_status" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_id]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_id]"
                       dataType="i1"
                       name="atm_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_manufacturer]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_manufacturer]"
                       codePage="1252"
                       dataType="str"
                       length="15"
                       name="atm_manufacturer" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_location]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_location]"
                       codePage="1252"
                       dataType="str"
                       length="255"
                       name="atm_location" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_streetname]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_streetname]"
                       codePage="1252"
                       dataType="str"
                       length="255"
                       name="atm_streetname" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_street_number]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_street_number]"
                       dataType="i2"
                       name="atm_street_number" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_zipcode]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_zipcode]"
                       dataType="i2"
                       name="atm_zipcode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_lat]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_lat]"
                       dataType="r8"
                       name="atm_lat" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_lon]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_lon]"
                       dataType="r4"
                       name="atm_lon" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cardnum]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cardnum]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="cardnum" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[currency]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[currency]"
                       codePage="1252"
                       dataType="str"
                       length="3"
                       name="currency" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[amount]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[amount]"
                       dataType="r4"
                       name="amount" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[service]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[service]"
                       codePage="1252"
                       dataType="str"
                       length="10"
                       name="service" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[message_code]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[message_code]"
                       dataType="i1"
                       name="message_code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[message_text]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[message_text]"
                       codePage="1252"
                       dataType="str"
                       length="66"
                       name="message_text" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_lat]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_lat]"
                       dataType="r4"
                       name="weather_lat" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_lon]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_lon]"
                       dataType="r4"
                       name="weather_lon" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_city_id]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_city_id]"
                       dataType="i4"
                       name="weather_city_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_city_name]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_city_name]"
                       codePage="1252"
                       dataType="str"
                       length="17"
                       name="weather_city_name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[temp]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[temp]"
                       dataType="r4"
                       name="temp" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pressure]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[pressure]"
                       dataType="i2"
                       name="pressure" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[humidity]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[humidity]"
                       dataType="i1"
                       name="humidity" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wind_speed]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wind_speed]"
                       dataType="i1"
                       name="wind_speed" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wind_deg]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[wind_deg]"
                       dataType="i1"
                       name="wind_deg" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[rain_3h]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[rain_3h]"
                       dataType="r4"
                       name="rain_3h" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[clouds_all]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[clouds_all]"
                       dataType="i1"
                       name="clouds_all" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_id]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_id]"
                       dataType="i2"
                       name="weather_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_main]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_main]"
                       codePage="1252"
                       dataType="str"
                       length="255"
                       name="weather_main" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_description]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_description]"
                       codePage="1252"
                       dataType="str"
                       length="255"
@@ -1680,27 +1680,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1709,7 +1709,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Data Flow DTDate\OLE DB Destination"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -1766,7 +1766,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Data Flow DTDate\OLE DB Destination.Connections[OleDbConnection]"
                   connectionManagerID="{B575549F-9B15-4073-9977-12D27AB81693}:external"
                   connectionManagerRefId="Project.ConnectionManagers[localhost.ATMDW]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1774,143 +1774,143 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date_id]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[date_id]"
                       cachedDataType="i4"
                       cachedName="date_id"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_id]"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[date_id]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_id]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[date_id]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[month_n]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[month_n]"
                       cachedDataType="i4"
                       cachedName="month_n"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_month]"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[month_n]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_month]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[month_n]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[weekday_n]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[weekday_n]"
                       cachedDataType="i4"
                       cachedName="weekday_n"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_weekday]"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[weekday_n]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_weekday]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[weekday_n]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[hour]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[hour]"
                       cachedDataType="i1"
                       cachedName="hour"
                       cachedSortKeyPosition="4"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_hour]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[hour]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_hour]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[hour]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[day]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[day]"
                       cachedDataType="i1"
                       cachedName="day"
                       cachedSortKeyPosition="3"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_day]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[day]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_day]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[day]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[year]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[year]"
                       cachedDataType="i2"
                       cachedName="year"
                       cachedSortKeyPosition="1"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_year]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[year]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_year]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[year]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[full_date]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[full_date]"
                       cachedDataType="dbDate"
                       cachedName="full_date"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[full_date]"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[full_date]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[full_date]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[full_date]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[month]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[month]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="month"
                       cachedSortKeyPosition="2"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month_name]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[month]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month_name]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[month]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[quarter]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[quarter]"
                       cachedDataType="i4"
                       cachedName="quarter"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_quarter]"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[quarter]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_quarter]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[quarter]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[day_of_year]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[day_of_year]"
                       cachedDataType="i4"
                       cachedName="day_of_year"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[day_of_year]"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[day_of_year]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[day_of_year]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[day_of_year]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[number_of_week]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[number_of_week]"
                       cachedDataType="i4"
                       cachedName="number_of_week"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[number_of_week]"
-                      lineageId="Package\Data Flow Task\Componente de script.Outputs[Salida 0].Columns[number_of_week]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[number_of_week]"
+                      lineageId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0].Columns[number_of_week]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[weekday]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[weekday]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="weekday"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[weekday_name]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[weekday]" />
+                      externalMetadataColumnId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[weekday_name]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[weekday]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_id]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_id]"
                       dataType="i4"
                       name="date_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_year]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_year]"
                       dataType="i4"
                       name="date_year" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_month]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_month]"
                       dataType="i4"
                       name="date_month" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_day]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_day]"
                       dataType="i4"
                       name="date_day" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_hour]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_hour]"
                       dataType="i4"
                       name="date_hour" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_weekday]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_weekday]"
                       dataType="i4"
                       name="date_weekday" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[full_date]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[full_date]"
                       dataType="dbDate"
                       name="full_date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month_name]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[month_name]"
                       codePage="1252"
                       dataType="str"
                       length="20"
                       name="month_name" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_quarter]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[date_quarter]"
                       dataType="i4"
                       name="date_quarter" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[day_of_year]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[day_of_year]"
                       dataType="i4"
                       name="day_of_year" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[number_of_week]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[number_of_week]"
                       dataType="i4"
                       name="number_of_week" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[weekday_name]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[weekday_name]"
                       codePage="1252"
                       dataType="str"
                       length="20"
@@ -1920,22 +1920,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow DTDate\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow DTDate\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow DTDate\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow DTDate\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1944,7 +1944,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\Sort"
+              refId="Package\Data Flow DTDate\Sort"
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
@@ -1963,14 +1963,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </properties>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+                  refId="Package\Data Flow DTDate\Sort.Inputs[Sort Input]"
                   name="Sort Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[year]"
+                      refId="Package\Data Flow DTDate\Sort.Inputs[Sort Input].Columns[year]"
                       cachedDataType="i2"
                       cachedName="year"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[year]">
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[year]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -1983,12 +1983,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[month]"
+                      refId="Package\Data Flow DTDate\Sort.Inputs[Sort Input].Columns[month]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="month"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[month]">
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[month]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -2001,10 +2001,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[day]"
+                      refId="Package\Data Flow DTDate\Sort.Inputs[Sort Input].Columns[day]"
                       cachedDataType="i1"
                       cachedName="day"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[day]">
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[day]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -2017,12 +2017,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[weekday]"
+                      refId="Package\Data Flow DTDate\Sort.Inputs[Sort Input].Columns[weekday]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="15"
                       cachedName="weekday"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[weekday]">
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[weekday]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -2035,10 +2035,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[hour]"
+                      refId="Package\Data Flow DTDate\Sort.Inputs[Sort Input].Columns[hour]"
                       cachedDataType="i1"
                       cachedName="hour"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[hour]">
+                      lineageId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[hour]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -2056,14 +2056,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Sort.Outputs[Sort Output]"
+                  refId="Package\Data Flow DTDate\Sort.Outputs[Sort Output]"
                   isSorted="true"
                   name="Sort Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[year]"
+                      refId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[year]"
                       dataType="i2"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[year]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[year]"
                       name="year"
                       sortKeyPosition="1">
                       <properties>
@@ -2071,15 +2071,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[year]}</property>
+                          name="SortColumnId">#{Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[year]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[month]"
+                      refId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[month]"
                       codePage="1252"
                       dataType="str"
                       length="15"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[month]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[month]"
                       name="month"
                       sortKeyPosition="2">
                       <properties>
@@ -2087,13 +2087,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[month]}</property>
+                          name="SortColumnId">#{Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[month]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[day]"
+                      refId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[day]"
                       dataType="i1"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[day]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[day]"
                       name="day"
                       sortKeyPosition="3">
                       <properties>
@@ -2101,28 +2101,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[day]}</property>
+                          name="SortColumnId">#{Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[day]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[weekday]"
+                      refId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[weekday]"
                       codePage="1252"
                       dataType="str"
                       length="15"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[weekday]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[weekday]"
                       name="weekday">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[weekday]}</property>
+                          name="SortColumnId">#{Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[weekday]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[hour]"
+                      refId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[hour]"
                       dataType="i1"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[hour]"
+                      lineageId="Package\Data Flow DTDate\Sort.Outputs[Sort Output].Columns[hour]"
                       name="hour"
                       sortKeyPosition="4">
                       <properties>
@@ -2130,7 +2130,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[hour]}</property>
+                          name="SortColumnId">#{Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].Columns[hour]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -2141,20 +2141,20 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+              refId="Package\Data Flow DTDate.Paths[Flat File Source Output]"
+              endId="Package\Data Flow DTDate\Sort.Inputs[Sort Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Salida 0]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Data Flow DTDate.Paths[Salida 0]"
+              endId="Package\Data Flow DTDate\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Salida 0"
-              startId="Package\Data Flow Task\Componente de script.Outputs[Salida 0]" />
+              startId="Package\Data Flow DTDate\Componente de script.Outputs[Salida 0]" />
             <path
-              refId="Package\Data Flow Task.Paths[Sort Output]"
-              endId="Package\Data Flow Task\Componente de script.Inputs[Entrada 0]"
+              refId="Package\Data Flow DTDate.Paths[Sort Output]"
+              endId="Package\Data Flow DTDate\Componente de script.Inputs[Entrada 0]"
               name="Sort Output"
-              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
+              startId="Package\Data Flow DTDate\Sort.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2186,7 +2186,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       DTS:From="Package\Tarea Ejecutar SQL"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Data Flow DTDate" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
@@ -2201,27 +2201,27 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\Data Flow Task"
-          TopLeft="114,146" />
+          Size="164,41.6"
+          Id="Package\Data Flow DTDate"
+          TopLeft="104.000000397364,143.91999998347" />
         <NodeLayout
           Size="176,41.6"
           Id="Package\Tarea Ejecutar SQL"
           TopLeft="96,42" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="187.75,84">
+          TopLeft="185.000000198682,83.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,62"
+              EndConnector="0,60.3199999834697"
               Start="0,0"
-              End="0,54.5">
+              End="0,52.8199999834697">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.5" />
+                    End="0,52.8199999834697" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2234,28 +2234,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Data Flow DTDate">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="99.2,41.6"
-          Id="Package\Data Flow Task\Sort"
-          TopLeft="49,107.5" />
-        <NodeLayout
-          Size="176.8,41.6"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="10,311.5" />
+          Size="156,41.6"
+          Id="Package\Data Flow DTDate\Flat File Source"
+          TopLeft="20.5,5.5" />
         <NodeLayout
           Size="185.6,41.6"
-          Id="Package\Data Flow Task\Componente de script"
+          Id="Package\Data Flow DTDate\Componente de script"
           TopLeft="5.50000000000003,209.5" />
         <NodeLayout
-          Size="156,41.6"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="20.5,5.5" />
+          Size="176.8,41.6"
+          Id="Package\Data Flow DTDate\OLE DB Destination"
+          TopLeft="10,311.5" />
+        <NodeLayout
+          Size="99.2,41.6"
+          Id="Package\Data Flow DTDate\Sort"
+          TopLeft="49,107.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
+          Id="Package\Data Flow DTDate.Paths[Sort Output]"
           TopLeft="98.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2279,7 +2279,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Salida 0]"
+          Id="Package\Data Flow DTDate.Paths[Salida 0]"
           TopLeft="98.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2301,7 +2301,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
+          Id="Package\Data Flow DTDate.Paths[Flat File Source Output]"
           TopLeft="98.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2326,7 +2326,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow DTDate\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

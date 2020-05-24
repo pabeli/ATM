@@ -22,7 +22,7 @@
           DTS:DataType="3"
           DTS:TextQualified="True"
           DTS:ObjectName="id"
-          DTS:DTSID="{8E75D026-862C-4EE5-8751-41899E8C5DFE}"
+          DTS:DTSID="{C00653C4-DDCF-4CD5-9726-1F818833CF9D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="2"
           DTS:TextQualified="True"
           DTS:ObjectName="year"
-          DTS:DTSID="{A7222617-8CB3-4CB9-8F02-57E928FC808C}"
+          DTS:DTSID="{68D116DD-D360-4B15-B964-E4D9006AFC1F}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="month"
-          DTS:DTSID="{9C053098-6E81-4230-BC65-C44243AE98D0}"
+          DTS:DTSID="{D7AAE1E3-3EF2-4B39-BF2D-F8CA7FDA742C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -47,7 +47,7 @@
           DTS:DataType="16"
           DTS:TextQualified="True"
           DTS:ObjectName="day"
-          DTS:DTSID="{8B98A0F3-0031-4F40-A1E2-ACBA88BB2540}"
+          DTS:DTSID="{674E6AA2-E31A-4926-A2E4-C2A531ABEB7C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="weekday"
-          DTS:DTSID="{DDFBB959-F9B2-459F-8850-DEE9100D0B9C}"
+          DTS:DTSID="{3090279F-60EC-4F0E-96B2-5B43E05DA76E}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -64,7 +64,7 @@
           DTS:DataType="16"
           DTS:TextQualified="True"
           DTS:ObjectName="hour"
-          DTS:DTSID="{9EBF6E62-4AC4-42A6-9C31-F1DAB1BBC25A}"
+          DTS:DTSID="{50CAF632-567C-4850-864F-92D0BA8821AF}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -73,7 +73,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_status"
-          DTS:DTSID="{F35BB5E4-FB3A-478A-BFCA-9FCD13979CC2}"
+          DTS:DTSID="{82124849-B91C-416B-9C2C-1888C389F345}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -81,7 +81,7 @@
           DTS:DataType="16"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_id"
-          DTS:DTSID="{2A036A61-5752-43B2-961A-F70A662DC701}"
+          DTS:DTSID="{328BB75B-B9C4-4C15-A6FF-7411CEE8EA2D}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -90,7 +90,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_manufacturer"
-          DTS:DTSID="{C549EE37-1015-43E8-8103-8DD9BEEC2FD4}"
+          DTS:DTSID="{635D024E-A2EF-4C21-9B32-10EBE11F212C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -99,7 +99,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_location"
-          DTS:DTSID="{AE81386D-E506-4172-B8B4-ABAFA15BE09A}"
+          DTS:DTSID="{3CA419D5-D544-4ACC-82E2-A0DE508725CC}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -108,7 +108,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_streetname"
-          DTS:DTSID="{D5A06939-CD19-461D-A85F-D60CD42DA1F0}"
+          DTS:DTSID="{C711255D-10F7-4996-AA80-899BAA136499}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -116,7 +116,7 @@
           DTS:DataType="2"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_street_number"
-          DTS:DTSID="{25ED08AC-202E-413A-A82E-5EFA5AE208D3}"
+          DTS:DTSID="{3B0A4B0A-53DE-4588-B4AA-24BA5D24695C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -124,7 +124,7 @@
           DTS:DataType="2"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_zipcode"
-          DTS:DTSID="{01C239EE-AE06-4A5C-831B-DC322CE466B5}"
+          DTS:DTSID="{4FDA86A1-0772-4954-B52E-6B05D7E14E44}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -132,7 +132,7 @@
           DTS:DataType="5"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_lat"
-          DTS:DTSID="{FF2BB46F-D306-4F47-BDCC-DAA2C5B17687}"
+          DTS:DTSID="{A64C0905-BD48-4B2D-8335-E4EADB1B5FC6}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -140,7 +140,7 @@
           DTS:DataType="4"
           DTS:TextQualified="True"
           DTS:ObjectName="atm_lon"
-          DTS:DTSID="{781C01AD-667B-4D96-8D67-368EEB30137B}"
+          DTS:DTSID="{9CA01382-D796-424F-811C-B7544C9EC37F}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -149,7 +149,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="cardnum"
-          DTS:DTSID="{CD3A83BE-F422-4EBC-9B28-D13413D31AE9}"
+          DTS:DTSID="{E307E559-B083-414B-A783-CD282EEDEC72}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -158,7 +158,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="currency"
-          DTS:DTSID="{3C68673C-ED1E-42D7-B3FC-2B447478BC53}"
+          DTS:DTSID="{EECC3645-D071-4E39-BB14-58B14FC8B3B4}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -166,7 +166,7 @@
           DTS:DataType="4"
           DTS:TextQualified="True"
           DTS:ObjectName="amount"
-          DTS:DTSID="{42F4D08D-9E5A-4761-BE7C-762B64A1EB43}"
+          DTS:DTSID="{6B4F8E7C-D6ED-498F-95A2-D02A81211719}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -175,7 +175,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="service"
-          DTS:DTSID="{1E3C256C-BF05-44A2-9FC7-BB2AEE205A21}"
+          DTS:DTSID="{0D642A7B-099A-4458-A1E3-8833E362F97F}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -183,16 +183,16 @@
           DTS:DataType="16"
           DTS:TextQualified="True"
           DTS:ObjectName="message_code"
-          DTS:DTSID="{F1752220-25EC-478F-B361-2359EF8018EB}"
+          DTS:DTSID="{BE241AA1-5ED4-47F0-8D99-6D2F500A382A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
           DTS:ColumnDelimiter="_x002C_"
-          DTS:MaximumWidth="66"
+          DTS:MaximumWidth="255"
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="message_text"
-          DTS:DTSID="{13CAC963-A1B6-4FE8-B7F8-A82654AD7386}"
+          DTS:DTSID="{74BE386B-1697-4E11-93E2-997D88C3764E}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -200,7 +200,7 @@
           DTS:DataType="4"
           DTS:TextQualified="True"
           DTS:ObjectName="weather_lat"
-          DTS:DTSID="{BD719CEF-4D85-4DD2-BC8F-09BA6D5D7F87}"
+          DTS:DTSID="{FFEDC325-E52E-41B4-A6D3-617E55566975}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -208,7 +208,7 @@
           DTS:DataType="4"
           DTS:TextQualified="True"
           DTS:ObjectName="weather_lon"
-          DTS:DTSID="{81CE5B1E-307B-4484-B90E-67D7B1BDE83E}"
+          DTS:DTSID="{059A251C-5621-4308-A910-440DD2D8152C}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -216,7 +216,7 @@
           DTS:DataType="3"
           DTS:TextQualified="True"
           DTS:ObjectName="weather_city_id"
-          DTS:DTSID="{D954C313-7EAF-427F-988C-78E6191CA621}"
+          DTS:DTSID="{B969CFB3-811C-45C7-A229-F1C62335FCB9}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -225,7 +225,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="weather_city_name"
-          DTS:DTSID="{7171A837-A9B1-4CCE-A634-ED55E33E3995}"
+          DTS:DTSID="{E23309FC-C404-4167-B854-B3084EA6888F}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -233,7 +233,7 @@
           DTS:DataType="4"
           DTS:TextQualified="True"
           DTS:ObjectName="temp"
-          DTS:DTSID="{E201C829-9030-4F49-8AFE-EDE31D518B1E}"
+          DTS:DTSID="{3E07F749-2357-4FC8-9D86-4D1267F24D4A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -241,7 +241,7 @@
           DTS:DataType="2"
           DTS:TextQualified="True"
           DTS:ObjectName="pressure"
-          DTS:DTSID="{5326D854-C117-40F8-B7A7-B0AD9D8F7552}"
+          DTS:DTSID="{D07A41A8-F313-47B9-9238-5CAF92CF61E9}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -249,7 +249,7 @@
           DTS:DataType="16"
           DTS:TextQualified="True"
           DTS:ObjectName="humidity"
-          DTS:DTSID="{9FC4E443-761A-4141-BA12-96C54C6A6C91}"
+          DTS:DTSID="{E579D4C4-1A0B-4448-8BF7-903C267F5E35}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -257,7 +257,7 @@
           DTS:DataType="16"
           DTS:TextQualified="True"
           DTS:ObjectName="wind_speed"
-          DTS:DTSID="{04B9FA18-7C28-47BB-9DE1-AE07E434353F}"
+          DTS:DTSID="{F85B807B-846F-495F-BBDD-BF122165D425}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -265,7 +265,7 @@
           DTS:DataType="16"
           DTS:TextQualified="True"
           DTS:ObjectName="wind_deg"
-          DTS:DTSID="{2B897171-C968-467E-AD82-54136DFCE500}"
+          DTS:DTSID="{AC00FEE2-0FCC-4F21-84E3-26E829C1A4A2}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -273,7 +273,7 @@
           DTS:DataType="4"
           DTS:TextQualified="True"
           DTS:ObjectName="rain_3h"
-          DTS:DTSID="{C6F91EFE-45C5-4CA4-913A-45F48E4D750D}"
+          DTS:DTSID="{DDBF495D-3029-43E7-B37B-F7CD43888251}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -281,7 +281,7 @@
           DTS:DataType="16"
           DTS:TextQualified="True"
           DTS:ObjectName="clouds_all"
-          DTS:DTSID="{0D61B70E-6D9C-44C3-BEBE-43F1ED86F78A}"
+          DTS:DTSID="{1DD7ADA0-BA80-4D73-8CB9-DCB9C4FB778A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -289,7 +289,7 @@
           DTS:DataType="2"
           DTS:TextQualified="True"
           DTS:ObjectName="weather_id"
-          DTS:DTSID="{CBBA2C27-39A6-4E91-8929-3FE7AC0BB7C9}"
+          DTS:DTSID="{04AF2319-8793-4335-9D53-26FC5102C824}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -298,7 +298,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="weather_main"
-          DTS:DTSID="{95709025-7DFB-4D88-B0B6-E076E05C40DB}"
+          DTS:DTSID="{8AB39695-329D-4721-A3B5-BE80163326F3}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -307,7 +307,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="weather_description"
-          DTS:DTSID="{ACF7FB0F-388D-4D30-8E52-A26C74D0BD80}"
+          DTS:DTSID="{FFE16F7F-A809-4BC7-881D-CFAE3E00DA92}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>
