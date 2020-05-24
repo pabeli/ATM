@@ -35,6 +35,7 @@ CREATE TABLE DTLocation(
 	atm_lat float NOT NULL,
 	atm_lon float NOT NULL,
 	atm_street_number int NOT NULL,
+	atm_streetname varchar(255) NOT NULL,
 	atm_location varchar(255) NOT NULL,
 	atm_zipcode int NOT NULL,
 

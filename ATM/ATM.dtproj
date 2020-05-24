@@ -26,16 +26,16 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-N5DN7RS</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAguVzSTDXfEWk89dL2lss2wAAAAACAAAAAAAQZgAAAAEAACAAAAB8LF6T3dVTB1eG/HTQUmH4QxHVAeXM0uKV7XoOgIRTMgAAAAAOgAAAAAIAACAAAAAf/U/WVOuOSgPs+tPA+KSiuSsl8Gk3tD+jrIv8KWpZwZAAAAA4Wevj8a0egvgDBZI4whV1MfWweoJCzg7+hdTsBFl4Xp4da6kglO5OxGZMMZ0dv3Ej/bo3YlWtjf5/27X17DBBpRlQDOQFjMaZ8Uy2vY65eXYQIDwtWAsHngXBDdG4YijHiPiZncCbrCjXVHXmPrmMOd2KcizHCu1jxz6OVw/Qa4IsnrhGHWV2HlX7BW0EYE1AAAAAZ8N2FW5dflphwKevjEsNxI6pmq+cqRzDigxVC0CWtSNGAU+hh6t/VjjGhNRA4M71AW8/8L2ugmM2NzHM0lbuog==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1wZuKzFqB0iWrJuID5jseQAAAAACAAAAAAAQZgAAAAEAACAAAAB5bW5V6vSjNdYXsWcFaxwF/BiIOOZM9N/XoFzGN7I0SgAAAAAOgAAAAAIAACAAAAAEnRlxPZ94Ia8ZsnwC6R2w1ZFuGhkS8xsDYaDdrg/xtZAAAACARKoWaoJeu2GEjoCcoUanaZTFys1cE8Q84YcfzVKhPWgNiMoJ1H0JNcnf3LsLG27Eghi8EHH/+5bPfOwPcux9z/YtvnGKhPD42b+qitIgyTVJeB2kXnF2XMNy1G2ZF5NIGTuFQDh0zaF2VUeVeHnneKGO+5xjU4O06FpoUwfbUCsVM0PLRQ1W8p9AAUcu+JlAAAAAtmmzwqd+kwYRRcZNZICWiFaSP4AZQeUeZ74FNB3c3uu6RasRAYP6a1aW9moOePe97xTDmxtHDK675six7Gdp5A==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Paquete DTCards.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Paquete DTWeather.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Paquete DTATMInfo.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Paquete DTATMInfo Paula.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Paquete DTDate.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Paquete DTResults.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Paquete DTLocation.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="tarjxclientes.conmgr" />
@@ -519,10 +519,10 @@
                 <SSIS:Property SSIS:Name="Name">Paquete DTCards</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">10</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{950F92EE-A6BA-4294-A6DA-62BB154663C4}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C809EBBF-3A5A-454C-BAF7-69B432FBF4C9}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -540,23 +540,6 @@
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionGUID">{86BF5C88-9160-429B-A326-B9914E240F9D}</SSIS:Property>
-                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
-                <SSIS:Property SSIS:Name="Description">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
-              </SSIS:Properties>
-              <SSIS:Parameters />
-            </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Paquete DTATMInfo.dtsx">
-              <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{BA91AAD4-DE46-4D3A-B41C-C2DDF3A36275}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Paquete DTATMInfo 2</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">19</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionComments">
-                </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{E21F74DB-D88E-4DA8-A094-3EE70A275502}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -608,6 +591,23 @@
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionGUID">{8FFC0A15-EA5D-4966-82A8-63FE3FBDDCAD}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="Paquete DTLocation.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{DA221D90-3697-4B1D-9D6F-F125BA3DE061}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Paquete DTLocation</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">23</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{F0865AD3-9D6F-42A7-8F61-7BBB05572DEB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

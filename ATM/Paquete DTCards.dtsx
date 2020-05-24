@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete DTCards"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{950F92EE-A6BA-4294-A6DA-62BB154663C4}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{C809EBBF-3A5A-454C-BAF7-69B432FBF4C9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -44,12 +44,12 @@
                   name="Data Conversion Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow DTCards\Data Conversion from String to Integer.Inputs[Data Conversion Input].Columns[cardnumber]"
+                      refId="Package\Data Flow DTCards\Data Conversion from String to Integer.Inputs[Data Conversion Input].Columns[card_num]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="cardnumber"
-                      lineageId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[cardnumber]" />
+                      cachedName="card_num"
+                      lineageId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[card_num]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -62,19 +62,19 @@
                   synchronousInputId="Package\Data Flow DTCards\Data Conversion from String to Integer.Inputs[Data Conversion Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow DTCards\Data Conversion from String to Integer.Outputs[Data Conversion Output].Columns[Copia de cardnumber]"
+                      refId="Package\Data Flow DTCards\Data Conversion from String to Integer.Outputs[Data Conversion Output].Columns[Copia de card_num]"
                       dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow DTCards\Data Conversion from String to Integer.Outputs[Data Conversion Output].Columns[Copia de cardnumber]"
-                      name="Copia de cardnumber"
+                      lineageId="Package\Data Flow DTCards\Data Conversion from String to Integer.Outputs[Data Conversion Output].Columns[Copia de card_num]"
+                      name="Copia de card_num"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the input column used as the source of data for the conversion."
-                          name="SourceInputColumnLineageID">#{Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[cardnumber]}</property>
+                          name="SourceInputColumnLineageID">#{Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[card_num]}</property>
                         <property
                           dataType="System.Boolean"
                           description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -189,11 +189,11 @@
                       externalMetadataColumnId="Package\Data Flow DTCards\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[card_type]"
                       lineageId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[card_type]" />
                     <inputColumn
-                      refId="Package\Data Flow DTCards\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copia de cardnumber]"
+                      refId="Package\Data Flow DTCards\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copia de card_num]"
                       cachedDataType="i8"
-                      cachedName="Copia de cardnumber"
+                      cachedName="Copia de card_num"
                       externalMetadataColumnId="Package\Data Flow DTCards\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[card_num]"
-                      lineageId="Package\Data Flow DTCards\Data Conversion from String to Integer.Outputs[Data Conversion Output].Columns[Copia de cardnumber]" />
+                      lineageId="Package\Data Flow DTCards\Data Conversion from String to Integer.Outputs[Data Conversion Output].Columns[Copia de card_num]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -249,14 +249,14 @@
                   name="Derived Column Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow DTCards\Remove blanks.Inputs[Derived Column Input].Columns[cardnumber]"
+                      refId="Package\Data Flow DTCards\Remove blanks.Inputs[Derived Column Input].Columns[card_num]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
-                      cachedName="cardnumber"
+                      cachedName="card_num"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[cardnumber]"
+                      lineageId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[card_num]"
                       truncationRowDisposition="FailComponent"
                       usageType="readWrite">
                       <properties>
@@ -264,7 +264,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">[REPLACE](#{Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[cardnumber]}," ","")</property>
+                          name="Expression">[REPLACE](#{Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[card_num]}," ","")</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -343,15 +343,15 @@
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[cardnumber]"
+                      refId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[card_num]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].ExternalColumns[cardnumber]"
                       length="50"
-                      lineageId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[cardnumber]"
-                      name="cardnumber"
+                      lineageId="Package\Data Flow DTCards\TarjxCliente Source.Outputs[Flat File Source Output].Columns[card_num]"
+                      name="card_num"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -543,13 +543,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="169.6,41.6"
-          Id="Package\Data Flow DTCards\TarjxCliente Source"
-          TopLeft="124.699996980031,20.1066668264601" />
-        <NodeLayout
           Size="150.4,41.6"
           Id="Package\Data Flow DTCards\Remove blanks"
           TopLeft="134.299996980031,90.8266673884922" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow DTCards\OLE DB Destination"
+          TopLeft="123.899996980031,244.746668611738" />
+        <NodeLayout
+          Size="256,41.6"
+          Id="Package\Data Flow DTCards\Data Conversion from String to Integer"
+          TopLeft="81.4999969800315,166.400001322428" />
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Data Flow DTCards\TarjxCliente Source"
+          TopLeft="124.699996980031,20.1066668264601" />
         <EdgeLayout
           Id="Package\Data Flow DTCards.Paths[Flat File Source Output]"
           TopLeft="209.499996980031,61.7066668264601">
@@ -572,10 +580,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="256,41.6"
-          Id="Package\Data Flow DTCards\Data Conversion from String to Integer"
-          TopLeft="81.4999969800315,166.400001322428" />
         <EdgeLayout
           Id="Package\Data Flow DTCards.Paths[Derived Column Output]"
           TopLeft="209.499996980031,132.426667388492">
@@ -598,10 +602,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Data Flow DTCards\OLE DB Destination"
-          TopLeft="123.899996980031,244.746668611738" />
         <EdgeLayout
           Id="Package\Data Flow DTCards.Paths[Data Conversion Output]"
           TopLeft="209.499996980031,208.000001322428">
