@@ -3,6 +3,8 @@
   DTS:ObjectName="eurofxref-hist"
   DTS:DTSID="{C2AD1CAD-283C-48CC-A9B3-D95C20274B25}"
   DTS:CreationName="FLATFILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::EurofxrefHist_ConnectionString]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:Format="Delimited"
