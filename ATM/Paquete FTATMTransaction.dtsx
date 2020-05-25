@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="5/25/2020 3:09:48 PM"
@@ -11,22 +11,10 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete FTATMTransaction"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{1E202307-B83D-4717-B9A8-B6DE7307D9C1}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{9B173AAD-416C-4BDA-8C2E-60AD27CC3C48}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.ATMDW]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{FBCCC5C7-10BE-4CD3-A0CB-FB6C6EC79348}"
-      DTS:ObjectName="localhost.ATMDW">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=ATMDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -3725,8 +3713,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="{7365CAC1-09C9-48E2-9F5C-A46ECAC18F74}:invalid"
-                  connectionManagerRefId="{7365CAC1-09C9-48E2-9F5C-A46ECAC18F74}:invalid"
+                  connectionManagerID="{4D41E8C8-C894-4045-9B81-7F208129B47B}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[atmdata]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -4051,7 +4039,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       name="atm_zipcode" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_lat]"
-                      dataType="r4"
+                      dataType="r8"
                       name="atm_lat" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[atm_lon]"
@@ -4204,8 +4192,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\Flat File Source 1.Connections[FlatFileConnection]"
-                  connectionManagerID="{A9F8B339-12FB-43E6-BB3D-A7D7C8E59FB8}:invalid"
-                  connectionManagerRefId="{A9F8B339-12FB-43E6-BB3D-A7D7C8E59FB8}:invalid"
+                  connectionManagerID="{C2AD1CAD-283C-48CC-A9B3-D95C20274B25}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[eurofxref-hist]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -9019,8 +9007,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[localhost.ATMDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[localhost.ATMDW]"
+                  connectionManagerID="{B575549F-9B15-4073-9977-12D27AB81693}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.ATMDW]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
