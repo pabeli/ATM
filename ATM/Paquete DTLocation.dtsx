@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete DTLocation"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{9F72ACCA-AD86-409E-8C0D-A901F4AACFAD}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{8A7A2666-088C-4BFA-A40E-7A4D43EC539F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -311,7 +311,7 @@
                       refId="Package\Data Flow DTLocation\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[message_text]"
                       codePage="1252"
                       dataType="str"
-                      length="66"
+                      length="255"
                       name="message_text" />
                     <externalMetadataColumn
                       refId="Package\Data Flow DTLocation\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[weather_lat]"
@@ -367,13 +367,13 @@
                       refId="Package\Data Flow DTLocation\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[weather_main]"
                       codePage="1252"
                       dataType="str"
-                      length="200"
+                      length="255"
                       name="weather_main" />
                     <externalMetadataColumn
                       refId="Package\Data Flow DTLocation\Flat File ATM Info.Outputs[Flat File Source Output].ExternalColumns[weather_description]"
                       codePage="1252"
                       dataType="str"
-                      length="300"
+                      length="255"
                       name="weather_description" />
                   </externalMetadataColumns>
                 </output>
@@ -868,7 +868,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="180.8,41.6"
+          Size="181,42"
           Id="Package\Data Flow DTLocation"
           TopLeft="32.66666536861,25.6533335372077" />
       </GraphLayout>
@@ -880,39 +880,17 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="145.6,41.6"
-          Id="Package\Data Flow DTLocation\Sort by atm_id"
-          TopLeft="149.518513040778,102.246666628096" />
+          Size="117,42"
+          Id="Package\Data Flow DTLocation\OLE DB"
+          TopLeft="163.918513040778,191.881482956969" />
         <NodeLayout
-          Size="160,41.6"
+          Size="160,42"
           Id="Package\Data Flow DTLocation\Flat File ATM Info"
           TopLeft="142.318513040778,23.5266668099297" />
         <NodeLayout
-          Size="116.8,41.6"
-          Id="Package\Data Flow DTLocation\OLE DB"
-          TopLeft="163.918513040778,191.881482956969" />
-        <EdgeLayout
-          Id="Package\Data Flow DTLocation.Paths[Flat File Source Output]"
-          TopLeft="222.318513040778,65.1266668099297">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,37.119999818166"
-              Start="0,0"
-              End="0,29.619999818166">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.619999818166" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="146,42"
+          Id="Package\Data Flow DTLocation\Sort by atm_id"
+          TopLeft="149.518513040778,102.246666628096" />
         <EdgeLayout
           Id="Package\Data Flow DTLocation.Paths[Sort Output]"
           TopLeft="222.318513040778,143.846666628096">
@@ -927,6 +905,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,40.5348163288733" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow DTLocation.Paths[Flat File Source Output]"
+          TopLeft="222.318513040778,65.1266668099297">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.119999818166"
+              Start="0,0"
+              End="0,29.619999818166">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.619999818166" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

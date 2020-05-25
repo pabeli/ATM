@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete DTCards"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{C809EBBF-3A5A-454C-BAF7-69B432FBF4C9}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{972383B0-55EF-47DF-B6D2-97C2D431E4E2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -531,7 +531,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="169.6,41.6"
+          Size="170,42"
           Id="Package\Data Flow DTCards"
           TopLeft="19.3333325650957,14.5600001157125" />
       </GraphLayout>
@@ -543,19 +543,19 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
+          Size="150,42"
           Id="Package\Data Flow DTCards\Remove blanks"
           TopLeft="134.299996980031,90.8266673884922" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\Data Flow DTCards\OLE DB Destination"
           TopLeft="123.899996980031,244.746668611738" />
         <NodeLayout
-          Size="256,41.6"
+          Size="256,42"
           Id="Package\Data Flow DTCards\Data Conversion from String to Integer"
           TopLeft="81.4999969800315,166.400001322428" />
         <NodeLayout
-          Size="169.6,41.6"
+          Size="170,42"
           Id="Package\Data Flow DTCards\TarjxCliente Source"
           TopLeft="124.699996980031,20.1066668264601" />
         <EdgeLayout

@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete DTDate"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{6570F35E-F978-485E-B163-3B095C3B1358}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{8C576D16-96CC-455A-8F5B-51D86AAF9F83}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1613,7 +1613,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[message_text]"
                       codePage="1252"
                       dataType="str"
-                      length="66"
+                      length="255"
                       name="message_text" />
                     <externalMetadataColumn
                       refId="Package\Data Flow DTDate\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weather_lat]"
@@ -2201,11 +2201,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="164,41.6"
+          Size="164,42"
           Id="Package\Data Flow DTDate"
           TopLeft="104.000000397364,143.91999998347" />
         <NodeLayout
-          Size="176,41.6"
+          Size="176,42"
           Id="Package\Tarea Ejecutar SQL"
           TopLeft="96,42" />
         <EdgeLayout
@@ -2237,21 +2237,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package\Data Flow DTDate">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,41.6"
+          Size="156,42"
           Id="Package\Data Flow DTDate\Flat File Source"
           TopLeft="20.5,5.5" />
         <NodeLayout
-          Size="185.6,41.6"
+          Size="186,42"
           Id="Package\Data Flow DTDate\Componente de script"
           TopLeft="5.50000000000003,209.5" />
         <NodeLayout
-          Size="176.8,41.6"
+          Size="177,42"
           Id="Package\Data Flow DTDate\OLE DB Destination"
           TopLeft="10,311.5" />
         <NodeLayout
-          Size="99.2,41.6"
+          Size="99,42"
           Id="Package\Data Flow DTDate\Sort"
           TopLeft="49,107.5" />
         <EdgeLayout
@@ -2273,9 +2273,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,18.25,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout

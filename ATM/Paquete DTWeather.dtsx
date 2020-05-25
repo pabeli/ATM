@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{DE470A13-A2D2-4997-842B-A57D422F8BD5}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{18A2DC2D-DAC9-4473-BCD3-A2E2163619A2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -231,7 +231,7 @@
                       refId="Package\Data Flow DTWeather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[message_text]"
                       codePage="1252"
                       dataType="str"
-                      length="66"
+                      length="255"
                       name="message_text" />
                     <externalMetadataColumn
                       refId="Package\Data Flow DTWeather\Flat File Weather.Outputs[Flat File Source Output].ExternalColumns[weather_lat]"
@@ -632,7 +632,7 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="180.8,41.6"
+          Size="181,42"
           Id="Package\Data Flow DTWeather"
           TopLeft="15.3333327240414,11.7866667603387" />
       </GraphLayout>
@@ -644,39 +644,17 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,41.6"
+          Size="172,42"
           Id="Package\Data Flow DTWeather\OLE DB DTWeather"
           TopLeft="74.4555523943019,158.77333459515" />
         <NodeLayout
-          Size="157.6,41.6"
+          Size="158,42"
           Id="Package\Data Flow DTWeather\Flat File Weather"
           TopLeft="81.6555523943019,15.2533334545559" />
         <NodeLayout
-          Size="164.8,41.6"
+          Size="165,42"
           Id="Package\Data Flow DTWeather\Sort by weather_id"
           TopLeft="78.0555523943019,81.8133339835273" />
-        <EdgeLayout
-          Id="Package\Data Flow DTWeather.Paths[Flat File Source Output]"
-          TopLeft="160.455552394302,56.8533334545559">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,24.9600005289714"
-              Start="0,0"
-              End="0,17.4600005289714">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.4600005289714" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow DTWeather.Paths[Sort Output]"
           TopLeft="160.455552394302,123.413333983527">
@@ -691,6 +669,28 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,27.8600006116226" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow DTWeather.Paths[Flat File Source Output]"
+          TopLeft="160.455552394302,56.8533334545559">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.9600005289714"
+              Start="0,0"
+              End="0,17.4600005289714">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.4600005289714" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
