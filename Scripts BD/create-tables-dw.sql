@@ -51,6 +51,7 @@ CREATE TABLE DTResults(
 
 
 CREATE TABLE FTATMTransaction(
+	id bigint NOT NULL,
 	weather_id int NOT NULL,
 	card_num bigint NOT NULL,
 	date_id int NOT NULL,
@@ -60,7 +61,7 @@ CREATE TABLE FTATMTransaction(
 	amount_failed float NOT NULL,
 	atm_status varchar(10) NOT NULL,
 
-    CONSTRAINT PK_ATMTransaction PRIMARY KEY (weather_id,card_num,date_id,atm_id),
+    CONSTRAINT PK_ATMTransaction PRIMARY KEY (id, weather_id,card_num,date_id,atm_id, message_code),
     FOREIGN KEY (weather_id) REFERENCES DTWeather(weather_id),
     FOREIGN KEY (card_num) REFERENCES DTCards(card_num),
     FOREIGN KEY (date_id) REFERENCES DTDate(date_id),
