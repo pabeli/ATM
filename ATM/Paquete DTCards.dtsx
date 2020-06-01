@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete DTCards"
   DTS:PackageType="5"
-  DTS:VersionBuild="11"
-  DTS:VersionGUID="{972383B0-55EF-47DF-B6D2-97C2D431E4E2}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{8B3F9923-0273-47EB-8F30-78A053BBE695}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -23,7 +23,7 @@
       DTS:Description="Data Flow Task"
       DTS:DTSID="{78B43B07-5521-4455-953E-E78CFD130A05}"
       DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
+      DTS:LocaleID="1033"
       DTS:ObjectName="Data Flow DTCards"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
@@ -36,6 +36,7 @@
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
+              localeId="1033"
               name="Data Conversion from String to Integer"
               usesDispositions="true">
               <inputs>
@@ -113,6 +114,7 @@
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
+              localeId="1033"
               name="OLE DB Destination"
               usesDispositions="true"
               version="4">
@@ -240,6 +242,7 @@
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              localeId="1033"
               name="Remove blanks"
               usesDispositions="true">
               <inputs>
@@ -533,7 +536,7 @@
         <NodeLayout
           Size="170,42"
           Id="Package\Data Flow DTCards"
-          TopLeft="19.3333325650957,14.5600001157125" />
+          TopLeft="19.3333325650957,98.5600001157125" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

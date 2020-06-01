@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Paquete FTATMTransaction"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{C049C854-0550-40D8-A968-BAE5D5715037}">
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{4E169ADF-4E4F-43B9-8B53-5FABA3A2560E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -23,7 +23,7 @@
       DTS:Description="Data Flow Task"
       DTS:DTSID="{F8E73033-6FD2-44C4-95E0-68C323B05CD7}"
       DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
+      DTS:LocaleID="1033"
       DTS:ObjectName="Data Flow Task"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
@@ -36,7 +36,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="11274"
+              localeId="1033"
               name="ATM Data Source"
               usesDispositions="true"
               version="1">
@@ -515,6 +515,7 @@
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;12"
               description="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma."
+              localeId="1033"
               name="Currency Rate Conversion"
               version="12">
               <properties>
@@ -2750,6 +2751,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               componentClassID="Microsoft.DataConvert"
               contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Data Conversion"
+              localeId="1033"
               name="Data Conversion from String to integer"
               usesDispositions="true">
               <inputs>
@@ -2827,7 +2829,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="11274"
+              localeId="1033"
               name="Eurofxref Source"
               usesDispositions="true"
               version="1">
@@ -4080,6 +4082,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;12"
               description="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma."
+              localeId="1033"
               name="Generate Date ID"
               version="12">
               <properties>
@@ -5352,6 +5355,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               componentClassID="Microsoft.MergeJoin"
               contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              localeId="1033"
               name="Merge Join by Date"
               version="1">
               <properties>
@@ -6608,6 +6612,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
+              localeId="1033"
               name="OLE DB Destination"
               usesDispositions="true"
               version="4">
@@ -6805,6 +6810,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
               description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              localeId="1033"
               name="Remove blanks"
               usesDispositions="true">
               <inputs>
@@ -6881,6 +6887,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              localeId="1033"
               name="Sort By Date"
               version="1">
               <properties>
@@ -7342,6 +7349,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              localeId="1033"
               name="Sort By Date 1"
               version="1">
               <properties>
@@ -8784,6 +8792,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;12"
               description="Incluye y ejecuta código de scripts personalizados. Por ejemplo, se usa para aplicar una regla de negocios que limita el intervalo de valores válidos de una columna de ingresos o para sumar los valores de dos columnas y calcular el promedio de la suma."
+              localeId="1033"
               name="Successful and failed transactions"
               version="12">
               <properties>
@@ -11130,33 +11139,37 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="166,42"
-          Id="Package\Data Flow Task\ATM Data Source"
-          TopLeft="22.5,7.5" />
-        <NodeLayout
           Size="266,42"
           Id="Package\Data Flow Task\Data Conversion from String to integer"
           TopLeft="179.5,593.5" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Data Flow Task\Sort By Date"
+          TopLeft="36,233.5" />
         <NodeLayout
           Size="208,42"
           Id="Package\Data Flow Task\Currency Rate Conversion"
           TopLeft="208.5,377.5" />
         <NodeLayout
-          Size="161,42"
-          Id="Package\Data Flow Task\Eurofxref Source"
-          TopLeft="257,80.5" />
+          Size="174,42"
+          Id="Package\Data Flow Task\Merge Join by Date"
+          TopLeft="225.5,305.5" />
         <NodeLayout
           Size="150,42"
           Id="Package\Data Flow Task\Sort By Date 1"
           TopLeft="262.5,194.5" />
         <NodeLayout
+          Size="161,42"
+          Id="Package\Data Flow Task\Eurofxref Source"
+          TopLeft="257,80.5" />
+        <NodeLayout
+          Size="245,42"
+          Id="Package\Data Flow Task\Successful and failed transactions"
+          TopLeft="190,449.5" />
+        <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task\Remove blanks"
           TopLeft="235,521.5" />
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Data Flow Task\Merge Join by Date"
-          TopLeft="225.5,305.5" />
         <NodeLayout
           Size="177,42"
           Id="Package\Data Flow Task\OLE DB Destination"
@@ -11166,13 +11179,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Data Flow Task\Generate Date ID"
           TopLeft="23,119.5" />
         <NodeLayout
-          Size="141,42"
-          Id="Package\Data Flow Task\Sort By Date"
-          TopLeft="36,233.5" />
-        <NodeLayout
-          Size="245,42"
-          Id="Package\Data Flow Task\Successful and failed transactions"
-          TopLeft="190,449.5" />
+          Size="166,42"
+          Id="Package\Data Flow Task\ATM Data Source"
+          TopLeft="22.5,7.5" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output1]"
           TopLeft="338.833333333333,236.5">

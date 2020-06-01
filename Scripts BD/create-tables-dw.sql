@@ -1,5 +1,8 @@
+GO
+CREATE DATABASE ATMDW;
+GO
 USE ATMDW;
-
+GO
 CREATE TABLE DTCards(
 	card_num bigint NOT NULL,
 	card_type varchar(255) NOT NULL,
@@ -68,3 +71,4 @@ CREATE TABLE FTATMTransaction(
     FOREIGN KEY (atm_id) REFERENCES DTLocation(atm_id),
     FOREIGN KEY (message_code) REFERENCES DTResults(message_code)
 );
+GO

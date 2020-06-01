@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package2"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{18A2DC2D-DAC9-4473-BCD3-A2E2163619A2}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{7F8FE620-6ACF-41F0-81BB-EACB2EE57360}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -23,7 +23,7 @@
       DTS:Description="Data Flow Task"
       DTS:DTSID="{28A847FA-3B21-4C08-8FF3-2977958CCC65}"
       DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
+      DTS:LocaleID="1033"
       DTS:ObjectName="Data Flow DTWeather"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
@@ -36,7 +36,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="11274"
+              localeId="1033"
               name="Flat File Weather"
               usesDispositions="true"
               version="1">
@@ -331,6 +331,7 @@
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
+              localeId="1033"
               name="OLE DB DTWeather"
               usesDispositions="true"
               version="4">
@@ -473,6 +474,7 @@
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              localeId="1033"
               name="Sort by weather_id"
               version="1">
               <properties>
@@ -648,7 +650,7 @@
           Id="Package\Data Flow DTWeather\OLE DB DTWeather"
           TopLeft="74.4555523943019,158.77333459515" />
         <NodeLayout
-          Size="158,42"
+          Size="163,42"
           Id="Package\Data Flow DTWeather\Flat File Weather"
           TopLeft="81.6555523943019,15.2533334545559" />
         <NodeLayout
@@ -679,18 +681,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow DTWeather.Paths[Flat File Source Output]"
-          TopLeft="160.455552394302,56.8533334545559">
+          TopLeft="161.855552394302,57.2533334545559">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,24.9600005289714"
+              EndConnector="0,24.5600005289714"
               Start="0,0"
-              End="0,17.4600005289714">
+              End="0,17.0600005289714">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.4600005289714" />
+                    End="0,17.0600005289714" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
